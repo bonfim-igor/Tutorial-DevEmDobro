@@ -1,0 +1,97 @@
+body {
+    background-color: #000;
+    overflow: hidden;
+}
+
+main::after {
+    content: "";
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    min-height: 100vh;
+    width: 80vw;
+
+    background: linear-gradient(-233deg, #000 40%, rgba(0, 0, 0, 0) 65%) no-repeat;
+}
+
+main .character {
+    display: none;    
+    height: 100vh;
+}
+
+main .character.selected {
+    display: block;
+}
+
+main .character .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content {
+    position: absolute;
+    top: 0px;
+    left: 120px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    max-width: 380px;
+    z-index: 1;
+}
+
+.content .character-name {
+    color: #fff;
+    font-size: 48px;
+    font-family: "Secular One";
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.content .description {
+    color: #fff;
+    font-family: "Rubik";
+    line-height: 24px;
+}
+
+.content .icon {
+    background-image: url("../img/one-piece-logo.png");
+    background-size: cover;
+    height: 100px;
+    width: 230px;
+    margin-bottom: 35px;
+}
+
+.buttons {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 180px;
+
+    gap: 10px;
+}
+
+.buttons .button {
+    border: none;
+    background: #000;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.buttons .button img {
+    border-radius: 50%;
+}
+
+.buttons .button.selected {
+    transform: scale(1.2);
+    box-shadow: 0 0 10px #d9d9d9;
+}
