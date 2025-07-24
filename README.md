@@ -8,7 +8,7 @@ O projeto foi realizado aplicando conhecimentos básicos das seguintes linguagen
 ## Requisitos para ultilizar o site
 
 - Uma maquina com acesso a internet.
-- A seguinte URL: https://bonfim-igor.github.io/OnePiece-Tutorial-DevEmDobro/
+- A seguinte URL: https://bonfim-igor.github.io/Tutorial-DevEmDobro/
 
 ---
 
